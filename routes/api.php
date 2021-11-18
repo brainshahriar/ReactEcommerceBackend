@@ -6,7 +6,7 @@ use App\Http\Controllers\Admin\VisitorController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\SiteInfoController;
 use App\Http\Controllers\Admin\CategoryController;
-
+use App\Http\Controllers\Admin\ProductListController;
 
 
 /*
@@ -36,3 +36,7 @@ Route::get('/allsiteinfo',[SiteInfoController::class, 'AllSiteinfo']);
 //all category
 
 Route::get('/allcategory',[CategoryController::class, 'AllCategory']);
+
+//product list
+
+Route::get('/productlistbyremark/{remark}',[ProductListController::class, 'ProductListbyremark']);
