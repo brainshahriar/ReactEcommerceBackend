@@ -7,6 +7,8 @@ use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\SiteInfoController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductListController;
+use App\Http\Controllers\Admin\SliderController;
+
 
 
 /*
@@ -48,3 +50,8 @@ Route::get('/productlistbycategory/{category}',[ProductListController::class, 'P
 //product list by subcategory
 
 Route::get('/productlistbysubcategory/{category}/{subcategory}',[ProductListController::class, 'ProductListBySubcategory']);
+
+//slider route
+
+Route::get('/allslider',[SliderController::class, 'AllSlider']);
+
