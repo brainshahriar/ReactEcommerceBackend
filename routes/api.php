@@ -35,7 +35,8 @@ use App\Http\Controllers\User\AuthController;
 
 Route::post('/login',[AuthController::class, 'Login']);
 
-
+ // Register Routes 
+Route::post('/register',[AuthController::class, 'Register']);
 
 ///end
 
