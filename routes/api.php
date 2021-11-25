@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\ProductDetailsController;
 use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\User\AuthController;
 use App\Http\Controllers\User\ForgetController;
+use App\Http\Controllers\User\ResetController;
 
 
 
@@ -43,6 +44,8 @@ Route::post('/register',[AuthController::class, 'Register']);
 Route::post('/forgetpassword',[ForgetController::class, 'ForgetPassword']);
 ///end
 
+ // Reset Password Routes 
+Route::post('/resetpassword',[ResetController::class, 'ResetPassword']);
 
 
 Route::get('/getvisitor',[VisitorController::class, 'GetVisitorDetails']);

@@ -8,12 +8,12 @@ class ForgetRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
-     *
+     * 
      * @return bool
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class ForgetRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+           'email' => 'required',
         ];
     }
 }
