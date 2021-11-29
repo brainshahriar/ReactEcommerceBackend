@@ -35,4 +35,5 @@ class ProductListController extends Controller
         $productlist=ProductList::where('subcategory',$subcategory)->orderBy('id','desc')->limit(6)->get();
         return $productlist;
     }
+    
 }
