@@ -10,6 +10,8 @@ use App\Http\Controllers\Admin\ProductListController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\ProductDetailsController;
 use App\Http\Controllers\Admin\NotificationController;
+use App\Http\Controllers\Admin\ProductCartController;
+
 use App\Http\Controllers\User\AuthController;
 use App\Http\Controllers\User\ForgetController;
 use App\Http\Controllers\User\ResetController;
@@ -97,3 +99,7 @@ Route::get('/search/{key}',[ProductListController::class, 'ProductBySearch']);
 Route::post('/similar/{subcategory}',[ProductListController::class, 'SimilarProduct']);
 // Review Product Route
 Route::get('/reviewlist/{id}',[ReviewController::class, 'ReviewList']);
+
+// Cart Route
+
+Route::post('/addtocart',[ProductCartController::class, 'addToCart']);
