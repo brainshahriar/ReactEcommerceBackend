@@ -5,11 +5,12 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\ProductCart;
+use App\Models\ProductList;
 
 class ProductCartController extends Controller
 {
     public function addToCart(Request $request){
-        $email = $request->input('email');
+       $email = $request->input('email');
         $size = $request->input('size');
         $color = $request->input('color');
         $quantity = $request->input('quantity');
